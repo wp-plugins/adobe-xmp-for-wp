@@ -141,7 +141,7 @@ if ( ! class_exists( 'adobeXMPforWP' ) ) {
 			if ( ! is_dir( $this->cache_dir ) ) mkdir( $this->cache_dir );
 		}
 
-		 */
+		*/
 
 		function get_xmp_raw( $filepath ) {
 
