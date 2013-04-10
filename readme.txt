@@ -49,10 +49,10 @@ echo 'Taken by ', $xmp['Creator'], "\n";
 
 This shortcode prints all the XMP information for Media Library image ID "101" and NextGEN Gallery image ID "201". The XMP information is printed as definition list `<dl>` with a class name of `xmp_shortcode`, that you can style for your needs. Each `<dt>` and `<dd>` element also has a style corresponding to it's title - for example, the "Creator" list element has an `xmp_creator` class name. The shortcode can take a few additional arguments:
 
-* `include` (defaults to "all") : Define which XMP elements to include, for example `[xmp id="101" include="Creator,Creator Email"]`. Note that the `include` values are **case sensitive**.
-* `exclude` (defaults to none) : Exclude some XMP elements, for example `[xmp id="101" exclude="Creator Email"]` to print all XMP elements, except for the "Creator Email".
-* `show_title` (defaults to "yes") : Toggle printing of the XMP element title, for example `[xmp id="101" show_title="no"]` only prints the `<dd>` values, not the `<dt>` titles.
-* `not_keyword` (defaults to none) : Exclude a list of (case incensitive) keywords, for example `[xmp id="101" not_keyword="who,what,where"]`. To exclude a hierarchical keyword list, use hyphens between the keywords, for example `[xmp id="101" not_keyword="who,what,where,who-people-unknown"]`
+* `include` (defaults to "all") : <p>Define which XMP elements to include, for example `[xmp id="101" include="Creator,Creator Email"]`. Note that the `include` values are **case sensitive**.</p>
+* `exclude` (defaults to none) : <p>Exclude some XMP elements, for example `[xmp id="101" exclude="Creator Email"]` to print all XMP elements, except for the "Creator Email".</p>
+* `show_title` (defaults to "yes") : <p>Toggle printing of the XMP element title, for example `[xmp id="101" show_title="no"]` only prints the `<dd>` values, not the `<dt>` titles.</p>
+* `not_keyword` (defaults to none) : <p>Exclude a list of (case incensitive) keywords, for example `[xmp id="101" not_keyword="who,what,where"]`. To exclude a hierarchical keyword list, use hyphens between the keywords, for example `[xmp id="101" not_keyword="who,what,where,who-people-unknown"]`</p>
 
 == Installation ==
 
