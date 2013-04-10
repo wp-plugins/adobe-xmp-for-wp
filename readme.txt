@@ -64,7 +64,9 @@ The shortcode can also take a few additional arguments:
 
 * `include` (defaults to "all")
 
-Define which XMP elements to include, for example `[xmp id="101" include="Creator,Creator Email"]`. Note that the `include` values are **case sensitive**.
+Define which XMP elements to include, for example `[xmp id="101" include="Creator,Creator Email"]`. 
+
+Please note that the `include` values are **case sensitive**.
 
 * `exclude` (defaults to none)
 
@@ -76,7 +78,9 @@ Toggle printing of the XMP element title, for example `[xmp id="101" show_title=
 
 * `not_keyword` (defaults to none)
 
-Exclude a list of (case incensitive) keywords, for example `[xmp id="101" not_keyword="who,what,where"]`. To exclude a hierarchical keyword list, use hyphens between the keywords, for example `[xmp id="101" not_keyword="who,what,where,who-people-unknown"]`
+Exclude a list of (case incensitive) keywords, for example `[xmp id="101" not_keyword="who,what,where"]`. 
+
+To exclude a hierarchical keyword list, use hyphens between the keywords, for example `[xmp id="101" not_keyword="who,what,where,who-people-unknown"]`.
 
 == Installation ==
 
