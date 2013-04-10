@@ -64,7 +64,7 @@ if ( ! class_exists( 'adobeXMPforWPShortCodes' ) ) {
 				$xmp = $adobeXMP->get_xmp( $pid );
 				if ( $include == 'all' ) $include = implode( ',', array_keys( $xmp ) );
 
-				echo '<div class="xmp_shortcode"><dl>', "\n";
+				echo "\n", '<dl class="xmp_shortcode">', "\n";
 				foreach ( explode( ',', $include ) as $dt ) {
 
 					if ( ! empty( $exclude_title[ strtolower( $dt ) ] ) ) continue;
@@ -108,9 +108,9 @@ if ( ! class_exists( 'adobeXMPforWPShortCodes' ) ) {
 							}
 						}
 					// value is a simple string
-					} else echo '<dd id="', $class, '">', $xmp[$dt], '</dd>', "\n";
+					} else echo '<dd class="xmp_', $class, '">', $xmp[$dt], '</dd>', "\n";
 				}
-				echo '</dl></div>', "\n";
+				echo '</dl>', "\n";
 			}
 		}
 	}
