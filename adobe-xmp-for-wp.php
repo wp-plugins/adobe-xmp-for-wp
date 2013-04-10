@@ -3,7 +3,7 @@
 Plugin Name: Adobe XMP for WP
 Plugin URI: http://surniaulula.com/wordpress-plugins/adobe-xmp-for-wp/
 Description: Get Adobe XMP from Media Library or NextGEN Gallery Images
-Version: 1.0
+Version: 1.1
 Author: Jean-Sebastien Morisset
 Author URI: http://surniaulula.com/
 
@@ -27,9 +27,7 @@ if ( ! class_exists( 'adobeXMPforWP' ) ) {
 
 	class adobeXMPforWP {
 
-		var $version = '1.0';		// for display purposes
 		var $is_active = array();	// assoc array for function/class/method checks
-		var $minimum_wp_version = '3.0';
 		var $plugin_name = '';
 		var $cache_dir = '';
 		var $use_cache = true;

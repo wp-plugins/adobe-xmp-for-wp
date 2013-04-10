@@ -106,6 +106,9 @@ To exclude a hierarchical keyword list, use hyphens between the keywords, for ex
 
 == Changelog ==
 
+= v1.1 =
+* Updated shortcode class to return HTML instead of echo'ing it. ;-)
+
 = v1.0 =
 * Initial release.
 
