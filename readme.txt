@@ -41,6 +41,8 @@ $xmp = $adobeXMP->get_xmp( $id );	// $id can be a Media Library image ID, or a N
 echo 'Taken by ', $xmp['Creator'], "\n";
 `
 
+[You can read more about Adobe XMP for WP's class methods here](http://surniaulula.com/2013/04/09/read-adobe-xmp-xml-in-php/).
+
 = Include a shortcode in your Post or Page =
 
 `
