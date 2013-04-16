@@ -2,7 +2,7 @@
 /*
 Plugin Name: Adobe XMP for WP
 Plugin URI: http://surniaulula.com/wordpress-plugins/adobe-xmp-for-wp/
-Description: Get Adobe XMP from Media Library or NextGEN Gallery Images
+Description: Get Adobe XMP / IPTC Information from Media Library and NextGEN Gallery Images
 Version: 1.1
 Author: Jean-Sebastien Morisset
 Author URI: http://surniaulula.com/

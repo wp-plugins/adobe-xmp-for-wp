@@ -6,11 +6,11 @@ Tested up to: 3.5
 Stable tag: 1.1
 License: GPLv2 or later
 
-Get Adobe XMP / IPTC information from Media Library or NextGEN Gallery Images
+Get Adobe XMP / IPTC Information from Media Library and NextGEN Gallery Images
 
 == Description ==
 
-Access the following Adobe XMP / IPTC information from Media Library or NextGEN Gallery images.
+Access the following Adobe XMP / IPTC information, included by Adobe PhotoShop and LightRoom, from WordPress Media Library and NextGEN Gallery images.
 
 * Creator Email
 * Owner Name
