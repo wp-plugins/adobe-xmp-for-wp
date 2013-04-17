@@ -10,7 +10,7 @@ Access Adobe XMP / IPTC information from Media Library and NextGEN Gallery image
 
 == Description ==
 
-Retrieve the following Adobe XMP / IPTC information from images in the WordPress Media Library and NextGEN Galleries.
+Retrieve the following Adobe XMP / IPTC information from images in the WordPress Media Library and NextGEN Galleries:
 
 * Creator Email
 * Owner Name
@@ -31,7 +31,7 @@ Retrieve the following Adobe XMP / IPTC information from images in the WordPress
 * Keywords
 * Hierarchical Keywords
 
-The *Adobe XMP for WP* plugin reads image files *progressively* to extract the embeded XMP meta data (instead of reading the whole file into memory, as other image management plugins do). The extracted XMP data is also *cached on disk* to improve performance, and is refreshed only if/when the original image is modified. You can use the plugin in one of two ways; calling a method from the `$adobeXMP` global **class object** in your template(s), or using an `[xmp]` **shortcode** in your Posts or Pages.
+The *Adobe XMP for WP* plugin reads image files *progressively* (small chunks at a time) to extract the embeded XMP meta data, instead of reading the whole file into memory as other image management plugins do. The extracted XMP data is also *cached on disk* to improve performance and is refreshed only if/when the original image is modified. You can use the plugin in one of two ways; calling a method from the `$adobeXMP` global **class object** in your template(s), or using an `[xmp]` **shortcode** in your Posts or Pages.
 
 = Retrieve XMP data as an array =
 
