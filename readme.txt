@@ -1,16 +1,16 @@
 === Adobe XMP for WP ===
 Contributors: jsmoriss
-Tags: adobe, xmp, xmpmeta, iptc, rdf, xml, lightroom, photoshop, media, library, nextgen, gallery, image, shortcode, function, method
+Tags: adobe, xmp, xmpmeta, iptc, rdf, xml, lightroom, photoshop, media, library, nextgen, gallery, image, shortcode, function, method, meta data
 Requires at least: 3.0
 Tested up to: 3.5
 Stable tag: 1.1
 License: GPLv2 or later
 
-Get Adobe XMP / IPTC Information from Media Library and NextGEN Gallery Images
+Access Adobe XMP / IPTC information from Media Library and NextGEN Gallery images using a Shortcode or PHP Class
 
 == Description ==
 
-Access the following Adobe XMP / IPTC information, included by Adobe PhotoShop and LightRoom, from WordPress Media Library and NextGEN Gallery images.
+Retrieve the following Adobe XMP / IPTC information from images in the WordPress Media Library and NextGEN Galleries.
 
 * Creator Email
 * Owner Name
@@ -31,7 +31,7 @@ Access the following Adobe XMP / IPTC information, included by Adobe PhotoShop a
 * Keywords
 * Hierarchical Keywords
 
-The *Adobe XMP for WP* plugin reads image files **progressively** to extract the embeded XMP meta data (instead of reading the whole file into memory as other image management plugins do). The extracted XMP data is also **cached on disk** to improve performance, and is refreshed only if/when the original image is modified. You can use the plugin in one of two ways; calling a method from the `$adobeXMP` global **class object** in your template(s), or using an `[xmp]` **shortcode** in your Posts or Pages.
+The *Adobe XMP for WP* plugin reads image files *progressively* to extract the embeded XMP meta data (instead of reading the whole file into memory, as other image management plugins do). The extracted XMP data is also *cached on disk* to improve performance, and is refreshed only if/when the original image is modified. You can use the plugin in one of two ways; calling a method from the `$adobeXMP` global **class object** in your template(s), or using an `[xmp]` **shortcode** in your Posts or Pages.
 
 = Retrieve XMP data as an array =
 
