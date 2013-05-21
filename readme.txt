@@ -3,7 +3,7 @@ Contributors: jsmoriss
 Tags: adobe, xmp, xmpmeta, iptc, rdf, xml, lightroom, photoshop, media, library, nextgen, gallery, image, shortcode, function, method, meta data
 Requires at least: 3.0
 Tested up to: 3.5
-Stable tag: 1.1
+Stable tag: 1.2
 License: GPLv2 or later
 
 Access Adobe XMP / IPTC information from Media Library and NextGEN Gallery images using a Shortcode or PHP Class
