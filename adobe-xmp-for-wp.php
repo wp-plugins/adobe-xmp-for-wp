@@ -2,10 +2,10 @@
 /*
 Plugin Name: Adobe XMP for WP
 Plugin URI: http://surniaulula.com/wordpress-plugins/adobe-xmp-for-wp/
-Description: Access Adobe XMP / IPTC information from Media Library and NextGEN Gallery images using a Shortcode or PHP Class
-Version: 1.2
 Author: Jean-Sebastien Morisset
 Author URI: http://surniaulula.com/
+Description: Access Adobe XMP / IPTC information from Media Library and NextGEN Gallery images using a Shortcode or PHP Class
+Version: 1.2
 
 Copyright 2012 - Jean-Sebastien Morisset - http://surniaulula.com/
 
