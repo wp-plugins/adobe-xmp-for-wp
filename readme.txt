@@ -1,10 +1,10 @@
 === Adobe XMP for WP ===
 Contributors: jsmoriss
-Donate link: http://surniaulula.com/wordpress-plugins/contribution-form/
+Donate link: http://surniaulula.com/extend/plugins/contribution-form/
 Tags: adobe, xmp, xmpmeta, iptc, rdf, xml, lightroom, photoshop, media, library, nextgen, gallery, image, shortcode, function, method, meta data
 License: GPLv2 or later
 Requires at least: 3.0
-Tested up to: 3.5
+Tested up to: 3.5.1
 Stable tag: 1.2
 
 Access Adobe XMP / IPTC information from Media Library and NextGEN Gallery images using a Shortcode or PHP Class
@@ -33,6 +33,8 @@ Retrieve the following Adobe XMP / IPTC information from images in the WordPress
 * Hierarchical Keywords
 
 The *Adobe XMP for WP* plugin reads image files *progressively* (small chunks at a time) to extract the embeded XMP meta data, instead of reading the whole file into memory as other image management plugins do. The extracted XMP data is also *cached on disk* to improve performance and is refreshed only if/when the original image is modified. You can use the plugin in one of two ways; calling a method from the `$adobeXMP` global **class object** in your template(s), or using an `[xmp]` **shortcode** in your Posts or Pages.
+
+<!--more-->
 
 = Retrieve XMP data as an array =
 
