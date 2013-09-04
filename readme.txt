@@ -4,7 +4,7 @@ Donate link: http://surniaulula.com/extend/plugins/contribution-form/
 Tags: adobe, xmp, xmpmeta, iptc, rdf, xml, lightroom, photoshop, media, library, nextgen, gallery, image, shortcode, function, method, meta data
 License: GPLv2 or later
 Requires at least: 3.0
-Tested up to: 3.5.1
+Tested up to: 3.6
 Stable tag: 1.2
 
 Access Adobe XMP / IPTC information from Media Library and NextGEN Gallery images using a Shortcode or PHP Class
@@ -110,7 +110,7 @@ To exclude a hierarchical keyword list, use hyphens between the keywords, for ex
 == Changelog ==
 
 = v1.2 =
-* Added missing variable declaration before appending to it.
+* Added missing variable declaration before appending a value.
 
 = v1.1 =
 * Updated shortcode class to return HTML instead of echo'ing it. ;-)
