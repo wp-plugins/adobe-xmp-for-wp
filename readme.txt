@@ -94,7 +94,7 @@ To exclude a hierarchical keyword list, use hyphens between the keywords, for ex
 1. Login to your weblog
 1. Go to Plugins
 1. Select Add New
-1. Search for *NextGEN Facebook*
+1. Search for *Adobe XMP for WP*
 1. Select Install
 1. Select Install Now
 1. Select Activate Plugin

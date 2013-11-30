@@ -39,14 +39,14 @@ if ( ! class_exists( 'adobeXMPforWP' ) ) {
 		}
 
 		function load_dependencies() {
-			require_once ( dirname ( __FILE__ ) . '/lib/shortcodes.php' );
+			require_once ( dirname ( __FILE__ ).'/lib/shortcodes.php' );
 		}
 
 		function init_plugin() {
 			$this->load_is_active();
 			$this->xmp_shortcodes = new adobeXMPforWPShortCodes();
-			$this->plugin_name = basename( dirname( __FILE__ ) ) . '/' . basename( __FILE__ );
-			$this->cache_dir = dirname ( __FILE__ ) . '/cache/';
+			$this->plugin_name = basename( dirname( __FILE__ ) ).'/'.basename( __FILE__ );
+			$this->cache_dir = dirname ( __FILE__ ).'/cache/';
 			if ( ! is_dir( $this->cache_dir ) ) mkdir( $this->cache_dir );
 		}
 
@@ -135,7 +135,7 @@ if ( ! class_exists( 'adobeXMPforWP' ) ) {
 
 		function __construct() {
 			$this->use_cache = true;
-			$this->cache_dir = dirname ( __FILE__ ) . '/cache/';
+			$this->cache_dir = dirname ( __FILE__ ).'/cache/';
 			if ( ! is_dir( $this->cache_dir ) ) mkdir( $this->cache_dir );
 		}
 
@@ -147,7 +147,7 @@ if ( ! class_exists( 'adobeXMPforWP' ) ) {
 			$chunk_size = 65536;	// read 64k at a time
 			$start_tag = '<x:xmpmeta';
 			$end_tag = '</x:xmpmeta>';
-			$cache_file = $this->cache_dir . md5( $filepath ) . '.xml';
+			$cache_file = $this->cache_dir.md5( $filepath ).'.xml';
 			$xmp_raw = null; 
 
 			if ( $this->use_cache == true && file_exists( $cache_file ) && 

@@ -45,7 +45,7 @@ if ( ! class_exists( 'adobeXMPforWPShortCodes' ) ) {
 
 			if ( ! empty( $ngg_id ) )
 				foreach ( explode( ',', $ngg_id ) as $pid )
-					$pids[] = 'ngg-' . $pid;
+					$pids[] = 'ngg-'.$pid;
 
 			// create and associative array of excluded titles and keywords for easy lookup
 			$exclude_title = array();
@@ -65,13 +65,13 @@ if ( ! class_exists( 'adobeXMPforWPShortCodes' ) ) {
 				$xmp = $adobeXMP->get_xmp( $pid );
 				if ( $include == 'all' ) $include = implode( ',', array_keys( $xmp ) );
 
-				$html .= "\n" . '<dl class="xmp_shortcode">' . "\n";
+				$html .= "\n".'<dl class="xmp_shortcode">'."\n";
 				foreach ( explode( ',', $include ) as $dt ) {
 
 					if ( ! empty( $exclude_title[ strtolower( $dt ) ] ) ) continue;
 
 					$class = preg_replace( '/ /', '_', strtolower( $dt ) );
-					if ( $show_title == 'yes' ) $html .= '<dt class="xmp_' . $class . '">' . $dt . '</dt>' . "\n";
+					if ( $show_title == 'yes' ) $html .= '<dt class="xmp_'.$class.'">'.$dt.'</dt>'."\n";
 	
 					// first dimension
 					if ( is_array( $xmp[$dt] ) ) {
@@ -91,7 +91,7 @@ if ( ! class_exists( 'adobeXMPforWPShortCodes' ) ) {
 										}
 										break;
 								}
-								$html .= '<dd class="xmp_' . $class . '">' . implode( ' &gt; ', array_values( $dd ) ) . '</dd>' . "\n";
+								$html .= '<dd class="xmp_'.$class.'">'.implode( ' &gt; ', array_values( $dd ) ).'</dd>'."\n";
 
 							// print simple arrays as a comma delimited list, and break the foreach loop
 							} else {
@@ -103,15 +103,15 @@ if ( ! class_exists( 'adobeXMPforWPShortCodes' ) ) {
 													unset ( $xmp[$dt][$el] );
 										break;
 								}
-								$html .= '<dd class="xmp_' . $class . '">' . implode( ', ', array_values( $xmp[$dt] ) ) . '</dd>' . "\n";
+								$html .= '<dd class="xmp_'.$class.'">'.implode( ', ', array_values( $xmp[$dt] ) ).'</dd>'."\n";
 								// get another element from the $include array
 								break;
 							}
 						}
 					// value is a simple string
-					} else $html .= '<dd class="xmp_' . $class . '">' . $xmp[$dt] . '</dd>' . "\n";
+					} else $html .= '<dd class="xmp_'.$class.'">'.$xmp[$dt].'</dd>'."\n";
 				}
-				$html .= '</dl>' . "\n";
+				$html .= '</dl>'."\n";
 			}
 			return $html;
 		}
