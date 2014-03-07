@@ -1,6 +1,5 @@
 === Adobe XMP for WP ===
 Contributors: jsmoriss
-Donate link: http://surniaulula.com/extend/plugins/contribution-form/
 Tags: adobe, xmp, xmpmeta, iptc, rdf, xml, lightroom, photoshop, media, library, nextgen, gallery, image, shortcode, function, method, meta data
 License: GPLv2 or later
 Requires at least: 3.0
