@@ -3,7 +3,7 @@ Contributors: jsmoriss
 Tags: adobe, xmp, xmpmeta, iptc, rdf, xml, lightroom, photoshop, media, library, nextgen, gallery, image, shortcode, function, method, meta data
 License: GPLv2 or later
 Requires at least: 3.0
-Tested up to: 3.6
+Tested up to: 3.9.1
 Stable tag: 1.2
 
 Access Adobe XMP / IPTC information from Media Library and NextGEN Gallery images using a Shortcode or PHP Class
@@ -101,7 +101,7 @@ To exclude a hierarchical keyword list, use hyphens between the keywords, for ex
 *Manual*
 
 1. Download and unzip the plugin
-1. Upload the entire adobe-xmp-for-wp/ folder to the /wp-content/plugins/ directory
+1. Upload the entire `adobe-xmp-for-wp/` folder to the `wp-content/plugins/` directory
 1. Activate the plugin through the Plugins menu in WordPress
 
 == Frequently Asked Questions ==
@@ -109,11 +109,6 @@ To exclude a hierarchical keyword list, use hyphens between the keywords, for ex
 == Changelog ==
 
 = v1.2 =
-* Added missing variable declaration before appending a value.
 
-= v1.1 =
-* Updated shortcode class to return HTML instead of echo'ing it. ;-)
-
-= v1.0 =
-* Initial release.
+* Files missing variable declaration before appending a value.
 
