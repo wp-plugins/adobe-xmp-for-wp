@@ -6,7 +6,7 @@ Requires at least: 3.0
 Tested up to: 3.9.1
 Stable tag: 1.2
 
-Access Adobe XMP / IPTC information from Media Library and NextGEN Gallery images using a Shortcode or PHP Class
+Access Adobe XMP / IPTC information from Media Library and NextGEN Gallery images using a Shortcode or PHP Class.
 
 == Description ==
 
