@@ -1,10 +1,11 @@
 === Adobe XMP for WP ===
 Contributors: jsmoriss
 Tags: adobe, xmp, xmpmeta, iptc, rdf, xml, lightroom, photoshop, media, library, nextgen, gallery, image, shortcode, function, method, meta data
-License: GPLv2 or later
-Requires at least: 3.0
-Tested up to: 3.9.1
-Stable tag: 1.2
+License: GPLv3
+License URI: http://www.gnu.org/licenses/gpl.txt
+Requires At Least: 3.0
+Tested Up To: 4.0
+Stable Tag: 1.2
 
 Access Adobe XMP / IPTC information from Media Library and NextGEN Gallery images using a Shortcode or PHP Class.
 
