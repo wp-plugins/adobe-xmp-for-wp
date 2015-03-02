@@ -40,7 +40,11 @@ The *Adobe XMP for WP* plugin reads image files *progressively* (small chunks at
 
 `
 global $adobeXMP;
-$xmp = $adobeXMP->get_xmp( $id );	// $id can be a Media Library image ID, or a NextGEN Gallery image ID in the form of 'ngg-#'.
+
+// $id can be media library image id, or nextgen gallery 
+// image id in the form of 'ngg-#'.
+$xmp = $adobeXMP->get_xmp( $id );
+
 echo 'Taken by ', $xmp['Creator'], "\n";
 `
 
@@ -61,7 +65,8 @@ This shortcode prints all the XMP information for Media Library image ID "101" a
 <dt class="xmp_source">Source</dt>
 <dd class="xmp_source">Underwater Focus</dd>
 <dt class="xmp_hierarchical_keywords">Hierarchical Keywords</dt>
-<dd class="xmp_hierarchical_keywords">What &gt; Photography &gt; Field of View &gt; Wide-Angle &gt; Fish-Eye</dd>
+<dd class="xmp_hierarchical_keywords">What &gt; Photography &gt; 
+	Field of View &gt; Wide-Angle &gt; Fish-Eye</dd>
 </dl>
 `
 
