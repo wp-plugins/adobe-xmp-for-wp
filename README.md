@@ -1,7 +1,7 @@
 <h1>Adobe XMP for WP</h1>
 
 <table>
-<tr><th align="right" valign="top" nowrap>Description Summary</th><td>Access Adobe XMP / IPTC information from Media Library and NextGEN Gallery images using a Shortcode or PHP Class.</td></tr>
+<tr><th align="right" valign="top" nowrap>Summary</th><td>Access Adobe XMP / IPTC information from Media Library and NextGEN Gallery images using a Shortcode or PHP Class.</td></tr>
 <tr><th align="right" valign="top" nowrap>Stable Version</th><td>1.2</td></tr>
 <tr><th align="right" valign="top" nowrap>Requires At Least</th><td>WordPress 3.0</td></tr>
 <tr><th align="right" valign="top" nowrap>Tested Up To</th><td>WordPress 4.1.1</td></tr>
