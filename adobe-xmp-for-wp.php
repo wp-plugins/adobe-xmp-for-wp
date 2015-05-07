@@ -1,26 +1,28 @@
 <?php
 /*
-Plugin Name: Adobe XMP for WP
-Plugin URI: http://surniaulula.com/extend/plugins/adobe-xmp-for-wp/
-Author: Jean-Sebastien Morisset
-Author URI: http://surniaulula.com/
-License: GPLv3
-License URI: http://surniaulula.com/wp-content/uploads/license/gpl.txt
-Description: Access Adobe XMP / IPTC information from Media Library and NextGEN Gallery images using a Shortcode or PHP Class
-Version: 1.2
-
-Copyright 2012 - Jean-Sebastien Morisset - http://surniaulula.com/
-
-This script is free software; you can redistribute it and/or modify it under
-the terms of the GNU General Public License as published by the Free Software
-Foundation; either version 3 of the License, or (at your option) any later
-version.
-
-This script is distributed in the hope that it will be useful, but WITHOUT ANY
-WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
-PARTICULAR PURPOSE. See the GNU General Public License for more details at
-http://www.gnu.org/licenses/.
-*/
+ * Plugin Name: Adobe XMP for WP
+ * Plugin URI: http://surniaulula.com/extend/plugins/adobe-xmp-for-wp/
+ * Author: Jean-Sebastien Morisset
+ * Author URI: http://surniaulula.com/
+ * License: GPLv3
+ * License URI: http://www.gnu.org/licenses/gpl.txt
+ * Description: Access Adobe XMP / IPTC information from Media Library and NextGEN Gallery images using a Shortcode or PHP Class
+ * Requires At Least: 3.0
+ * Tested Up To: 4.2.2
+ * Version: 1.2
+ * 
+ * Copyright 2012 - Jean-Sebastien Morisset - http://surniaulula.com/
+ * 
+ * This script is free software; you can redistribute it and/or modify it under
+ * the terms of the GNU General Public License as published by the Free Software
+ * Foundation; either version 3 of the License, or (at your option) any later
+ * version.
+ * 
+ * This script is distributed in the hope that it will be useful, but WITHOUT ANY
+ * WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+ * PARTICULAR PURPOSE. See the GNU General Public License for more details at
+ * http://www.gnu.org/licenses/.
+ */
 
 if ( ! defined( 'ABSPATH' ) )
 	die( 'Sorry, you cannot call this webpage directly.' );
