@@ -8,10 +8,10 @@
  * License URI: http://www.gnu.org/licenses/gpl.txt
  * Description: Access Adobe XMP / IPTC information from Media Library and NextGEN Gallery images using a Shortcode or PHP Class
  * Requires At Least: 3.0
- * Tested Up To: 4.2.2
+ * Tested Up To: 4.2.4
  * Version: 1.2
  * 
- * Copyright 2012 - Jean-Sebastien Morisset - http://surniaulula.com/
+ * Copyright 2012-2015 - Jean-Sebastien Morisset - http://surniaulula.com/
  * 
  * This script is free software; you can redistribute it and/or modify it under
  * the terms of the GNU General Public License as published by the Free Software
@@ -51,18 +51,22 @@ if ( ! class_exists( 'adobeXMPforWP' ) ) {
 			$this->xmp_shortcodes = new adobeXMPforWPShortCodes();
 			$this->plugin_name = basename( dirname( __FILE__ ) ).'/'.basename( __FILE__ );
 			$this->cache_dir = dirname ( __FILE__ ).'/cache/';
-			if ( ! is_dir( $this->cache_dir ) ) mkdir( $this->cache_dir );
+			if ( ! is_dir( $this->cache_dir ) ) 
+				mkdir( $this->cache_dir );
 		}
 
 		function load_is_active() {
-			$this->is_active['ngg'] = class_exists( 'nggdb' ) && method_exists( 'nggdb', 'find_image' ) ? 1 : 0;
+			$this->is_active['ngg'] = class_exists( 'nggdb' ) && 
+				method_exists( 'nggdb', 'find_image' ) ? 1 : 0;
 		}
 
 		function get_xmp( $pid, $ret_xmp = true ) {
 			if ( is_string( $pid ) && substr( $pid, 0, 4 ) == 'ngg-' ) {
 				$this->get_ngg_xmp( substr( $pid, 4 ), false );
 			} else $this->get_media_xmp( $pid, false );
-			if ( $ret_xmp == true ) return $this->xmp;
+
+			if ( $ret_xmp == true ) 
+				return $this->xmp;
 		}
 
 		function get_ngg_xmp( $pid, $ret_xmp = true ) {
@@ -72,7 +76,8 @@ if ( ! class_exists( 'adobeXMPforWP' ) ) {
 				$image = $nggdb->find_image( $pid );
 				if ( ! empty( $image ) ) {
 					$xmp_raw = $this->get_xmp_raw( $image->imagePath );
-					if ( ! empty( $xmp_raw ) ) $this->xmp = $this->get_xmp_array( $xmp_raw );
+					if ( ! empty( $xmp_raw ) ) 
+						$this->xmp = $this->get_xmp_array( $xmp_raw );
 				}
 			}
 			if ( $ret_xmp == true ) return $this->xmp;
@@ -81,7 +86,8 @@ if ( ! class_exists( 'adobeXMPforWP' ) ) {
 		function get_media_xmp( $pid, $ret_xmp = true ) {
 			$this->xmp = array();	// reset the variable
 			$xmp_raw = $this->get_xmp_raw( get_attached_file( $pid ) );
-			if ( ! empty( $xmp_raw ) ) $this->xmp = $this->get_xmp_array( $xmp_raw );
+			if ( ! empty( $xmp_raw ) ) 
+				$this->xmp = $this->get_xmp_array( $xmp_raw );
 			if ( $ret_xmp == true ) return $this->xmp;
 		}
 
@@ -122,28 +128,6 @@ if ( ! class_exists( 'adobeXMPforWP' ) ) {
 			}
 			return $xmp_arr;
 		}
-
-		/*
-		 * The get_xmp_raw() method reads image files 64k at a time
-		 * until it reaches 500k, or it finds the '</x:xmpmeta>' tag.
-		 * If both the start and end tags are found, the raw XMP
-		 * information is saved in a cache file on disk and the result
-		 * is returned. If the function is called again for the same
-		 * image file path, a cache file for that image exists, and it
-		 * is newer than the image file, the cached XMP information
-		 * will be returned.
-		 *
-		 * If you find this method useful, please credit
-		 * "Jean-Sebastien Morisset http://surniaulula.com/" in your
-		 * source code. Thank you.
-
-		function __construct() {
-			$this->use_cache = true;
-			$this->cache_dir = dirname ( __FILE__ ).'/cache/';
-			if ( ! is_dir( $this->cache_dir ) ) mkdir( $this->cache_dir );
-		}
-
-		*/
 
 		function get_xmp_raw( $filepath ) {
 
@@ -191,4 +175,5 @@ if ( ! class_exists( 'adobeXMPforWP' ) ) {
         global $adobeXMP;
 	$adobeXMP = new adobeXMPforWP();
 }
+
 ?>
